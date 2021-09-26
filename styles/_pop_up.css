@@ -1,0 +1,179 @@
+#orgon_format_pop_up {
+    width: 100vw;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: translateX();
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    cursor: pointer;
+    padding-top: 20vh;
+}
+#gereltuulegtei_hayag_pop_up {
+    width: 100vw;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: translateX();
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    cursor: pointer;
+    padding-top: 20vh;
+}
+#dotroosoo_gereltei_hayag_pop_up {
+    width: 100vw;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: translateX();
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    cursor: pointer;
+    padding-top: 20vh;
+}
+#dotor_gadna_biet_hayag_pop_up {
+    width: 100vw;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: translateX();
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    cursor: pointer;
+    padding-top: 20vh;
+}
+#busad_reklam_pop_up {
+    width: 100vw;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: translateX();
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    cursor: pointer;
+    padding-top: 20vh;
+}
+#urgumjlul_urilga_pop_up {
+    width: 100vw;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: translateX();
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    cursor: pointer;
+    padding-top: 20vh;
+}
+#material_pop_up {
+    width: 100vw;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: translateX();
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    cursor: pointer;
+    padding-top: 20vh;
+}
+#tumur_laser_pop_up {
+    width: 100vw;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: translateX();
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    cursor: pointer;
+    padding-top: 20vh;
+}
+#gadna_tug_dalbaa_pop_up {
+    width: 100vw;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: translateX();
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    cursor: pointer;
+    padding-top: 20vh;
+}
+#busad_reklam_pop_up .service_pop_up_bot_left li{
+    line-height: 1.2;
+}
+.service_orgon_format {
+    display: flex;
+    width: 80vw;
+    height: 70vw;
+    margin-left:10vw ;
+    flex-direction: column;
+    align-items: center;
+}
+.service_pop_up_top {
+    width: inherit;
+    position: absolute;
+    top:32vh;
+}
+.service_pop_up_bot {
+    height: 40vh;
+    width: 80vw;
+    justify-content: space-evenly;
+    position: absolute;
+    display: flex;
+    top: 72vh;
+    background: rgba(255, 255, 255, 0.5);
+}
+.service_pop_up_bot_left {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items:baseline;
+    top: 2vh;
+    width: 100%;
+    font-size: 1.8rem;
+    color: #333;
+    padding: 4rem 5rem ;
+}
+.service_pop_up_bot_left h1 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+.service_pop_up_bot_left p {
+    line-height: 1.6;
+}
+.service_pop_up_bot_left li {
+    list-style: circle;
+    line-height: 1.8;
+}
+.service_pop_up_top img {
+    width: 80vw;
+    height: 80vh;
+}
+.service_pop_up_top h1 {
+    position: absolute;
+    margin-top: -10vh;
+    background: #fff;
+    margin-left: 5%;
+    font-size: 3rem;
+    padding: 1rem 2rem;
+}
+.service_pop_up_bot_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+}
+.service_pop_up_bot_right img {
+    width: 20rem;
+    padding: 2rem 0;
+   
+}

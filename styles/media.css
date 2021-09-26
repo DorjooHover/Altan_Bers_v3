@@ -1,0 +1,199 @@
+@media screen and (max-width:2000px) {
+    .service_type_text p{
+        display: none;}
+    #service .services {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    #service {
+        height: auto;
+    }
+    #product {
+        margin-top: 7rem;
+        padding-top: 3rem;
+    }
+    #header {
+        margin-bottom: 10rem;
+    }
+    .products img {
+        height: 300px;
+        width: 300px;
+    }
+    .products img:nth-child(3), 
+    .products img:nth-child(4) {
+        width: 632px;
+    }  
+    #header, #service, #product {
+        padding-top: 0;
+        margin-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width:1360px) {
+    .hamburger {
+        display: flex;
+    }
+    #service {
+        padding-bottom: 30vh;
+    }
+    .nav_btns {
+        display: none;
+    }
+    .products img {
+        height: 250px;
+        width: 250px;
+    }
+    .products img:nth-child(3), 
+    .products img:nth-child(4) {
+        width: 532px;
+    }
+    #product {
+        margin-top: 10rem;
+    }
+    #header {
+        padding-bottom: 5rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    #header img {
+        bottom: 10vh;
+        right: -5%;
+    }
+    #header .header_text  {
+        top: 40%;
+    }
+    #header .header_text h1 {
+        font-size: 2.5rem;
+    }
+    .services_text p {
+        font-size: 1.3rem;
+    }
+    .service_text h1 {
+        font-size: 2.8rem;
+    }
+}
+@media screen and (max-width:1240px) {
+    #service {
+        height: auto;
+    }
+    .services .service_type h1 {
+        font-size: 1.5rem;
+    }
+    #header .header_text h1 {
+        font-size: 2.2rem;
+    }
+    #header .header_text h1 {
+        font-size: 2.2rem;
+    }
+    .btn_service {
+        font-size: 1.3rem;
+        padding: 1.3rem 2.5rem;
+    }
+    .top, .bottom {
+        display: block;
+        padding: 0;
+    }
+    .products img:nth-child(3), 
+    .products img:nth-child(4) {
+        width: 632px;
+    }
+    .products img {
+        height: 300px;
+        width: 300px;
+    }
+    .products .top img:nth-child(1),
+    .bottom img:nth-child(3) {
+        margin-right: 0;
+    }
+    .bottom img:nth-child(1),
+    .top img:nth-child(3) {
+        margin-left: 0;
+    }
+    .top img, .bottom img {
+        padding-right: 2rem;
+        padding-top: 2rem;
+    }   
+    .services_text {
+        flex-direction: column;
+        align-items: center;
+    }
+    .services_text .service_text {
+        text-align: center;
+        
+    }
+    .service_text h1 {
+        padding-bottom: 1rem;
+    }
+    .service_text h1:nth-child(1) {
+        padding-bottom: 0;
+    }
+    .services_text p {
+        text-align: justify;
+    }
+    #service .services {
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+    
+} 
+@media screen and (max-width:800px) {
+    #header .header_text {
+        font-size: 1.8rem;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #header img {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 45%;
+        width: 80%;
+        /* transform: translateY(-50%); */
+    }
+    .products img:nth-child(3), 
+    .products img:nth-child(4) {
+        width: 300px;
+    }
+    .service_text h1 {
+        font-size: 2rem;
+    }
+    .services_text {
+        width: auto;
+        text-align: center;
+        align-items: center;
+    }
+    #contact {
+        display: none;
+    }
+    .services_text .service_text {
+        width: auto;
+    }
+}
+@media screen and (max-width:450px) {
+    #header .header_text {
+        top: 15%;
+    }
+    #header img {
+        width: 100%;
+        top: 50%;
+    }
+    #header .header_text h1 {
+        font-size: 1.8rem;
+    }
+    .services .service_type {
+        padding: 1rem;
+    }
+    .services .service_type img {
+        width: 80px;
+        height: 80px;
+        margin-right: 1.2rem;
+    }
+    .services .service_type h1 {
+        font-size: 1.2rem;
+    }
+    #product img {
+        padding:1rem 0;
+    }
+}

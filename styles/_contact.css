@@ -1,0 +1,119 @@
+
+.contact {
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    display: none;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* background: var(--header-color); */
+    color: #fff;
+    align-items: center;
+    background: rgba(41, 53, 71,0.9);
+    padding-top: 5rem;
+
+}
+.map {
+    height: 200px;    
+    width: 200px;
+    border: 0.3rem solid var(--header-color);
+}
+.map:hover {
+    box-shadow: 5px 5px var(--btn-second-color);
+    transform: translate(-3px, -3px);
+    transition: 0.3s;
+}
+.footer_text {
+   display: flex;
+    width: 60vw;
+    font-size: 1.5rem;
+    text-align: left;
+    justify-content: space-between;
+    padding: 0 8vw;
+}
+.footer_text_address {
+    padding: 0 2rem;
+}
+.footer_text_address > p {
+    height: 6rem;
+}
+.footer .footer_text .footer_text_area {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.footer_text .footer_text_address {
+    width: 50%;
+}
+.footer_text .footer_text_address a {
+    color: #333;
+    padding: 0.5rem 0;
+    
+
+}
+.footer_text h1 {
+    font-size: 2rem;
+    font-family: var(--header-font-family);
+    padding-bottom: 2rem;
+    padding: 0 2rem;
+    width: 20vw;
+}
+.footer_text_area_1,
+.footer_text_area_2,
+.footer_text_area_3 {
+    display: flex;
+    flex-direction: column;
+    
+}
+.footer .footer_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20vw;
+}
+.footer_contact img {
+    width: 150px;
+    height: 150px;
+}
+
+.footer_contact p {
+    padding-bottom: 0.8rem;
+    font-size: 2rem;
+}
+.footer_icons a i{
+    border-radius: 50%;
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    color: #fff;
+    margin:0 1rem 
+
+}
+.fa-phone {
+    background: #f8c311;
+}
+.fa-yahoo {
+    background: var(--header-color);
+}
+.fa-facebook {
+    background: #01d5c9;
+}
+
+.footer_text_address_para {
+    display: flex;
+    height: 10rem;
+    width: 20rem;
+}
+.footer_text_address_para p {
+    width: 100%;
+}
+.footer_text_address_para:nth-child(1) {
+    text-align: end;
+    height: 10rem;
+}
+.footer_text_address_para:nth-child(2) {
+    text-align: end;
+}

@@ -1,0 +1,128 @@
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 3vw;
+    font-family: var(--nav-font-family);
+    letter-spacing: 5px;
+    font-weight: 500;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 98vw;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    left: 0;
+    padding: 1.5em 3rem;
+    font-family: 'Roboto', sans-serif;
+
+    
+}
+#nav img {
+    width: auto;
+    height: 50px;
+    position: relative;
+    bottom: 11px;
+}
+#nav ul {
+    display: flex;
+    padding-right: 1.5rem;
+}
+#nav ul a {
+    margin: 0 3rem ;
+}
+
+#nav ul li {
+    padding: 1rem 0;
+    color: #333;
+}
+.nav_btns_hamburger {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 129.2px;
+    z-index: 3;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    background: var(--header-color);
+}
+.nav_btns_hamburger ul {
+    width:100vw;
+    text-align: center;
+    display: inline;
+}
+.nav_btns_hamburger a li {
+    color: #fff;
+    
+    padding: 1rem 0;
+}
+.nav_btns_hamburger a li:hover {
+    background: #fff;
+    color: var(--header-color);
+    transition: 0.3s ease-in-out;
+}
+
+.btn_navbar {
+    padding: 1rem 3rem ;
+    background: var(--header-color);
+    color: #fff;
+    /* box-shadow: 10px 10px 0 0 var(--btn-second-color); */
+}
+.btn_navbar:hover {
+    /* background: var(--btn-second-color); */
+    transition: translate 0.5s ease-in-out;
+    transform: translate(-5px,5px);
+    box-shadow: 5px 5px 0 0 var(--btn-second-color);
+}
+#nav ul a.active {
+    border-bottom: 3px solid var(--btn-second-color);
+}
+#nav ul a:hover {
+    border-bottom: 3px solid var(--btn-second-color);
+    transition: 0.5s ;
+}
+.btn_navbar.active {
+    
+    box-shadow: 5px 5px 0 0 var(--btn-second-color);
+}
+.hamburger {
+    background: var(--header-color);
+    width: 50px;
+    display: none;
+    margin-right: 6rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    cursor: pointer;
+    height: 30px;
+}
+.hamburger  div {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+}
+.hamburger div:nth-child(2) {
+    margin: 6px 0;
+}
+.hamburger:hover {
+    background: #fff;
+    border: 1px solid var(--header-color);
+    transition: 0.3s ease-in-out;
+}
+.hamburger:hover div {
+    transition: 0.3s ease-in-out;
+    background: var(--header-color);
+}
+.view div:nth-child(2) {
+    display: none;
+}
+.view div:nth-child(1) {
+    transform: rotate(-45deg);
+}
+.view div:nth-child(3) {
+    transform: rotate(45deg);
+}
