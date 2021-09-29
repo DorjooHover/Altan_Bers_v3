@@ -16,7 +16,6 @@ onscroll = function () {
           removeClassProduct();
           removeClassContact();
           addActiveClass(currentId);
-          console.log(section.offsetTop)
           
           if(scrollPosition > (section.offsetTop + 80)){
             addScrollAnimation('service')
@@ -27,13 +26,11 @@ onscroll = function () {
           case 'service':
             if((scrollPosition < 2582)&&(scrollPosition >= 480)){
               currentId  = section.attributes.id.value
-              console.log(section)
               
               removeClassContact()
               removeClassProduct()
               removeClassHeader()
               addActiveClass(currentId);
-              console.log(section.offsetTop)
             }
             if(scrollPosition > (section.offsetTop+160)){
               addScrollAnimation('product')
@@ -75,10 +72,10 @@ onscroll = function () {
               addContact();
             }
           } else {
-          if(scrollPosition <= 5000){
+          if(scrollPosition <= 4500){
             removeContact();
           }
-          if(scrollPosition >= 4500){
+          if(scrollPosition >= 4000){
             addContact();
           }
           }
@@ -109,7 +106,6 @@ function addActiveClass(element) {
 }
 function addScrollAnimation(element) {
   var el2 = document.getElementById(element + '_service_text')
-  console.log(el2)
   el2.classList.add('animate__fadeInLeft')
 }
 function removeContact() {
@@ -124,15 +120,10 @@ function addContact() {
 
 // hamburger button
 var hamburger = document.getElementById('hamburger')
-var view = document.getElementsByClassName('view')
-var clicked_btn = document.querySelectorAll('#nav_btns_hambuger li')
 var hamburger_btns = document.getElementById("nav_btns_hamburger")
-console.log(clicked_btn)
 // hamburger.onclick = hamburger_display;
-clicked_btn.onclick = hamburger_btn_display;
 hamburger.addEventListener('click', () => {
   if(hamburger_btns.style.display == 'flex') {
-    document.getElementById('body').style.backgroundColor = 'black'
     hamburger_display_off()
   }
   else {
@@ -152,7 +143,6 @@ function hamburger_display_off() {
 hamburger_btns.onclick = hamburger_btn_display;
 function hamburger_btn_display() {
   hamburger_btns.style.display = 'none'
-  console.log('asdf')
 }
 function navbar(x) {
   x.classList.toggle('change')

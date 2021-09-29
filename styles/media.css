@@ -29,10 +29,20 @@
         padding-bottom: 0;
         margin-bottom: 0;
     }
+    #product {
+        margin-top: 40vh;
+    }
 }
 @media screen and (max-width:1360px) {
     .hamburger {
         display: flex;
+    }
+    #nav {
+        width: 90vw;
+    }
+    #nav img {
+        height: 50px;
+        bottom: auto;
     }
     #nav {
         flex-direction: row-reverse;
@@ -82,6 +92,26 @@
     .service_text h1 {
         font-size: 2.8rem;
     }
+    .nav_btns_hamburger {
+        top: 86px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 100vh;
+        width: 100vw;
+        background: rgba(0, 0, 0, 0.1);
+    }
+
+    .nav_btns_hamburger ul:nth-child(1) {
+        width: 80vw;
+        text-align: left;
+        background:#fff; 
+    }
+    .nav_btns_hamburger ul:nth-child(1) li {
+        color: #000;
+        padding-left: 1.5rem;
+        border-bottom: 1px solid #e4e4e4;
+    }
+    
 }
 @media screen and (max-width:1240px) {
     #service {
@@ -181,8 +211,12 @@
     }
 }
 @media screen and (max-width:450px) {
+    #nav {
+        width: 90vw;
+    }
     #nav img {
         height: 30px;
+        bottom: auto;
     }
     
     .hamburger {
@@ -195,17 +229,20 @@
         justify-content: flex-start;
         height: 100vh;
         width: 100vw;
-        background: rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 0, 0.1);
     }
 
-    .nav_btns_hamburger ul {
-        width: 75vw;
+    .nav_btns_hamburger ul:nth-child(1) {
+        width: 80vw;
         text-align: left;
         background:#fff; 
     }
-    .nav_btns_hamburger ul li {
+    .nav_btns_hamburger ul:nth-child(1) li {
         color: #000;
+        padding-left: 1.5rem;
+        border-bottom: 1px solid #e4e4e4;
     }
+    
     #header .header_text {
         top: 15%;
     }
@@ -245,5 +282,8 @@
     .footer_text h1 {
         display: none;
     } 
-    
+    #contact {
+        display: none !important;
+    }
+
 }
