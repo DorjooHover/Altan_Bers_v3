@@ -131,12 +131,12 @@ console.log(clicked_btn)
 // hamburger.onclick = hamburger_display;
 clicked_btn.onclick = hamburger_btn_display;
 hamburger.addEventListener('click', () => {
-  if(hamburger_btns.style.display == 'none') {
+  if(hamburger_btns.style.display == 'flex') {
     document.getElementById('body').style.backgroundColor = 'black'
-    hamburger_display_on()
+    hamburger_display_off()
   }
   else {
-    hamburger_display_off()
+    hamburger_display_on()
   }
 })
 
