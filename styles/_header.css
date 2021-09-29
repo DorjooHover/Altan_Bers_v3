@@ -39,7 +39,7 @@
 }
 .header_text h1 strong {
     /* color: var(--header-color); */
-    text-shadow: 2px 2px 0 var(--btn-second-color);
+    /* text-shadow: 2px 2px 0 var(--btn-second-color); */
 }
 .header_text h1 b {
     

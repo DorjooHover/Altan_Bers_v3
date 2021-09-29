@@ -1,9 +1,9 @@
 #product h2 {
     font-family: var(--nav-font-family);
-    color: var(--btn-second-color);
+    color: #333;
 }
 #product h1:nth-child(3) {
-    text-shadow: 5px 5px var(--btn-second-color);
+    /* text-shadow: 5px 5px var(--btn-second-color); */
 }
 #product  {
     /* margin-top: 42vh; */
@@ -61,7 +61,7 @@
 }
 
 #product img:hover {
-    box-shadow: 10px 10px var(--btn-second-color);
+    box-shadow: 10px 10px var(--header-color);
     transition: 0.3s ease-in-out;
     transform: translate(-8px, -8px);
 }

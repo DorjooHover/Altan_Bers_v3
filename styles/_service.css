@@ -46,12 +46,12 @@
 }
 .service_type:hover {
     transform: translate(-5px,5px);
-    box-shadow: 5px 5px 0 0 var(--btn-second-color);
+    box-shadow: 5px 5px 0 0 var(--header-color);
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
 .services_text strong {
-    text-shadow: 2px 2px var(--btn-second-color);
+    /* text-shadow: 2px 2px var(--btn-second-color); */
 }
 .service_text h1:nth-child(1){
     padding-bottom: 2rem;
@@ -79,7 +79,7 @@
     padding: 2rem;
     align-items: center;
     height: 13vh;
-    border: 3px var(--header-color) solid;
+    border: 3px #333 solid;
 }
 
 

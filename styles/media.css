@@ -172,6 +172,37 @@
     }
 }
 @media screen and (max-width:450px) {
+    #nav img {
+        height: 30px;
+    }
+    #nav {
+        flex-direction: row-reverse;
+        display: fixed;
+        top: 0;
+        left: 0;
+        transition: all 0.3s ease-in-out;
+        padding: 1.5em 1rem;
+        font-size: 0.5rem;
+    }
+    .hamburger {
+        margin-left: 0;
+        padding: 0.4rem 0.2rem;
+    }
+    .nav_btns_hamburger {
+        top: 66.8px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 100vh;
+    }
+
+    .nav_btns_hamburger ul {
+        width: 75vw;
+        text-align: left;
+        background:#fff; 
+    }
+    .nav_btns_hamburger ul li {
+        color: #000;
+    }
     #header .header_text {
         top: 15%;
     }
@@ -180,7 +211,7 @@
         top: 50%;
     }
     #header .header_text h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     .services .service_type {
         padding: 1rem;
@@ -196,4 +227,20 @@
     #product img {
         padding:1rem 0;
     }
+    .map_text {
+        display: block;
+    }
+    .footer_text_address_para {
+        display: none;
+    }
+    .qr {
+        display: none;
+    }
+    .map {
+        display: none;
+    }
+    .footer_text h1 {
+        display: none;
+    } 
+    
 }

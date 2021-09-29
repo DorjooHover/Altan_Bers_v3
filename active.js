@@ -1,13 +1,9 @@
 var sections = document.querySelectorAll("section");
 onscroll = function () {
   var scrollPosition = document.documentElement.scrollTop;
+  var scroll_width = document.documentElement.scrollWidth
 
-  // if(scrollPosition <= 3500){
-  //   removeContact();
-  // }
-  // if(scrollPosition >= 3200){
-  //   addContact();
-  // }
+  
 
   sections.forEach((section) => {
     
@@ -60,9 +56,32 @@ onscroll = function () {
           removeClassProduct();
           removeClassHeader();
           addActiveClass(currentId);
+         
         }
         break;
         default:
+          if(scroll_width >= 2000) {
+            if(scrollPosition <= 3500){
+              removeContact();
+            }
+            if(scrollPosition >= 3000){
+              addContact();
+            }
+          } else if(scroll_width >= 1240) {
+            if(scrollPosition <= 3750){
+              removeContact();
+            }
+            if(scrollPosition >= 3550){
+              addContact();
+            }
+          } else {
+          if(scrollPosition <= 5000){
+            removeContact();
+          }
+          if(scrollPosition >= 4500){
+            addContact();
+          }
+          }
     }
   
   });
@@ -112,7 +131,13 @@ console.log(clicked_btn)
 // hamburger.onclick = hamburger_display;
 clicked_btn.onclick = hamburger_btn_display;
 hamburger.addEventListener('click', () => {
-  hamburger_display_on()
+  if(hamburger_btns.style.display == 'none') {
+    document.getElementById('body').style.backgroundColor = 'black'
+    hamburger_display_on()
+  }
+  else {
+    hamburger_display_off()
+  }
 })
 
 hamburger_btns.addEventListener('click', () => {
@@ -120,7 +145,6 @@ hamburger_btns.addEventListener('click', () => {
 })
 function hamburger_display_on() {
   hamburger_btns.style.display = 'flex'
-  hamburger_btns.classList.add('view')
 }
 function hamburger_display_off() {
   hamburger_btns.style.display = 'none'
@@ -129,5 +153,8 @@ hamburger_btns.onclick = hamburger_btn_display;
 function hamburger_btn_display() {
   hamburger_btns.style.display = 'none'
   console.log('asdf')
+}
+function navbar(x) {
+  x.classList.toggle('change')
 }
 
