@@ -1,9 +1,6 @@
 @media screen and (max-width:2000px) {
     .service_type_text p{
-        display: none;}
-    #service .services {
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
+        display: none;
     }
     #service {
         height: auto;
@@ -31,6 +28,16 @@
     }
     #product {
         margin-top: 40vh;
+    }
+    .fa-arrow-right {
+        display: block;
+    }
+    .services .service_type h1 {
+        font-size: 1.5rem;
+    }
+    #service .services  {
+       width: auto;
+        
     }
 }
 @media screen and (max-width:1360px) {

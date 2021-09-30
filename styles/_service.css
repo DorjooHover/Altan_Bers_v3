@@ -1,6 +1,6 @@
 #service {
     background: #fff;
-    height: 100vh;
+    height: auto;
     font-family: var(--nav-font-family);
     color: #333;
     align-items: center;
@@ -67,10 +67,10 @@
 #service .services {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 84vw;
-    margin: 0 8vw;
-    grid-gap: 2rem;
-    margin-top: 5rem;
+    width: auto;
+    margin: 0 12vw;
+    grid-gap: 1.5rem;
+    margin-top: 5rem
 }
 .services .service_type {
     display: flex;
@@ -78,7 +78,8 @@
     color: #333;
     padding: 2rem;
     align-items: center;
-    height: 13vh;
+    justify-content: space-between;
+    height: auto;
     border: 3px #333 solid;
 }
 
@@ -112,8 +113,9 @@
 
 .fa-arrow-right {
     font-size: 1.4rem;
-    padding-left: 18vw;
-    display: none;
+    /* padding-left: 18vw; */
+    /* display: none; */
+    text-align: right;
     color: var(--btn-second-color);
 }
 
